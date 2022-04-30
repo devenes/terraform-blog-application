@@ -1,12 +1,14 @@
-# Django Blog Application deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service, VPC's Components, Lambda, DynamoDB and CloudFront with Route 53 using AWS CloudFormation Template
+# Django Blog Application deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service, VPC's Components, Lambda, DynamoDB and CloudFront with Route 53 using Terraform with AWS and GitHub Providers
 
 ## Description
 
-The Blog Page Application aims to deploy blog application as a web application written Django Framework on AWS Cloud Infrastructure using CloudFormation Template to create all resources needed to deploy the architecture. This infrastructure has Application Load Balancer with Auto Scaling Group of Elastic Compute Cloud (EC2) Instances and Relational Database Service (RDS) on defined VPC. Also, The CloudFront and Route 53 services are located in front of the architecture and manage the traffic in secure. User is able to upload pictures and videos on own blog page and these are kept on S3 Bucket.
+The Blog Page Application aims to deploy blog application as a web application written Django Framework on AWS Cloud Infrastructure using Terraform with AWS and GitHub Providers to create all resources needed to deploy the architecture. This infrastructure has Application Load Balancer with Auto Scaling Group of Elastic Compute Cloud (EC2) Instances and Relational Database Service (RDS) on defined VPC. Also, The CloudFront and Route 53 services are located in front of the architecture and manage the traffic in secure. User is able to upload pictures and videos on own blog page and these are kept on S3 Bucket.
 
 ## Project Architecture
 
 ![Project](./readme/blog.jpg)
+
+## Terraform Resources
 
 ![Project](./readme/tf_logs.gif)
 
@@ -125,7 +127,7 @@ In the architecture, you can configure your infrastructure using the followings,
 
   - Failover routing policy should be set while publishing application
 
-    - Primary connection is going to be CloudFormation
+    - Primary connection is going to be Terraform
 
     - Secondary connection is going to be a static website placed another S3 bucket. This S3 bucket has just basic static website that has a picture said "the page is under construction" given files within S3_static_Website folder
 
@@ -215,7 +217,7 @@ You need to have following credentials in `.env` file under the `src` folder to 
 
 ---
 
-## Expected CloudFormation Stack Outcome
+## Expected Terraform Outcome
 
 ![Stack Output](./readme/outputs.png)
 
@@ -342,3 +344,5 @@ You need to have following credentials in `.env` file under the `src` folder to 
 - [AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/index.html)
 
 - [AWS CloudFormation](https://aws.amazon.com/tr/cloudformation/)
+
+- [Terraform](https://www.terraform.io/)
