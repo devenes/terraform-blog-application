@@ -221,6 +221,16 @@ You need to have following credentials in `.env` file under the `src` folder to 
 
 ![Stack Output](./readme/outputs.png)
 
+## Load Balancer DNS Outcome Example
+
+![Load Balancer DNS](./readme/alb.png)
+
+## RDS Database Outcome Example
+
+![RDS Database](./readme/rds.png)
+
+---
+
 ### The following topics will be used at the end of the project:
 
 - Bash scripting
