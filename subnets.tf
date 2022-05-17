@@ -1,6 +1,6 @@
-#######################################
-#  PUBLİC AND PRİVATE SUBNETS
-#######################################
+####################################
+#### PUBLIC AND PRIVATE SUBNETS ####
+####################################
 
 resource "aws_subnet" "public" {
   count                   = length(var.subnet_cidr_public)
