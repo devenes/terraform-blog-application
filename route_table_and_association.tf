@@ -1,6 +1,6 @@
-####################################
-#  ROUTE TABLES
-####################################
+###########################
+######  ROUTE TABLES ######
+###########################
 
 resource "aws_route_table" "public" {
   vpc_id = aws_vpc.tf_vpc.id
@@ -27,9 +27,9 @@ resource "aws_route_table" "private" {
   }
 }
 
-############################################
-#  ROUTE TABLE ASSOCATİON
-############################################
+########################################
+#######  ROUTE TABLE ASSOCATİON ########
+########################################
 
 resource "aws_route_table_association" "public" {
   count          = length(var.subnet_cidr_public)
