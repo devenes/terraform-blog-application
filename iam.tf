@@ -38,8 +38,8 @@ resource "aws_iam_role_policy" "s3-full" {
   })
 }
 
-#############################
-# IAM INSTANCE PROFILE
+############################
+### IAM INSTANCE PROFILE ###
 ############################
 
 resource "aws_iam_instance_profile" "instance-role" {
@@ -47,9 +47,9 @@ resource "aws_iam_instance_profile" "instance-role" {
   role = aws_iam_role.ec2-s3.name
 }
 
-####################################
-# LAMBDA ROLE AND POLICIES
-###################################
+##################################
+#### LAMBDA ROLE AND POLICIES ####
+##################################
 
 resource "aws_iam_role" "iam_for_lambda" {
   name               = "lambda-role-for-s3"
