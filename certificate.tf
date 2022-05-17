@@ -1,7 +1,7 @@
 
-##################################
-# CERTIFICATE MANAGER 
-##################################
+#################################
+##### CERTIFICATE MANAGER #######
+#################################
 
 # Find a certificate that is isssued
 
@@ -19,7 +19,7 @@ data "aws_route53_zone" "zone" {
 
 #------------------------------------------------------------------------------
 # If you want to create new cert and create cname record to your hosted zone,
-# You can use this code bloks, I prefer using my existing ACM Cert
+# You can use this code bloks, I prefer using my existing ACM Certificates
 #------------------------------------------------------------------------------- 
 
 # resource "aws_acm_certificate" "cert" {
