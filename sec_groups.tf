@@ -1,5 +1,5 @@
 ##########################
-# ALB SECURITY GROUP
+### ALB SECURITY GROUP ###
 ##########################
 
 resource "aws_security_group" "alb-sec" {
@@ -29,7 +29,7 @@ resource "aws_security_group" "alb-sec" {
 }
 
 ############################
-# EC2 SECURITY GROUP
+#### EC2 SECURITY GROUP ####
 ############################
 
 resource "aws_security_group" "ec2-sec" {
@@ -65,9 +65,9 @@ resource "aws_security_group" "ec2-sec" {
   }
 }
 
-##########################
-#  RDS SECURITY GROUP
-##########################
+#########################
+##  RDS SECURITY GROUP ##
+#########################
 
 resource "aws_security_group" "rds-sec" {
   name        = "rds-sec-tf"
@@ -88,9 +88,9 @@ resource "aws_security_group" "rds-sec" {
   }
 }
 
-##############################
-# BASTION HOST SECURITY GROUP
-##############################
+###############################
+# BASTION HOST SECURITY GROUP #
+###############################
 
 resource "aws_security_group" "bastion-sec" {
   name        = "bastion-sec-tf"
